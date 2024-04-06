@@ -1,9 +1,23 @@
-<script setup></script>
+<script setup>
+import { useI18n } from "vue-i18n";
+import Navbar from "@/components/Navbar.vue";
+import Hero from "./pages/Hero.vue";
+const { t } = useI18n();
+</script>
 
 <template>
-  <h1>Hello World!</h1>
+  <main>
+    <section class="hero-section">
+      <Navbar />
+      <Hero />
+    </section>
+    <p>{{ $t("greeting") }}</p>
+  </main>
 </template>
 
-<style>
+<style lang="scss">
 @import "@/assets/scss/global.scss";
+@import "@/assets/scss/variables.scss";
+main {
+}
 </style>

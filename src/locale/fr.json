@@ -1,0 +1,9 @@
+{
+  "greeting": "hello",
+  "nav": {
+    "about": "À Propos",
+    "services": "Nos services",
+    "projects": "Projets",
+    "change_lang": "Anglais"
+  }
+}
