@@ -25,10 +25,7 @@ function changeLocale() {
 <style lang="scss" scoped>
 @import "@/assets/scss/variables.scss";
 nav {
-  position: absolute;
-  top: 0;
   display: flex;
-  width: calc(100% - 80px);
   justify-content: space-between;
   padding: 34px 40px;
   align-items: baseline;
@@ -42,6 +39,7 @@ nav {
       font-size: 18px;
       font-family: $font_secondary;
       letter-spacing: -0.13px;
+      font-weight: $secondary_font_weight;
     }
     button {
       background-color: $white;
@@ -52,7 +50,8 @@ nav {
       padding: 16px 32px;
       border-radius: 28px;
       &:hover {
-        opacity: 0.5;
+        background-color: rgba(255, 255, 255, 0.3);
+        color: $white;
         cursor: pointer;
       }
     }

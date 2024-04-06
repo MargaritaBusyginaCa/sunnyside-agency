@@ -1,12 +1,29 @@
 <script setup>
-import heroImg from "/images/desktop/image-header.jpg";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
+import arrowDown from "/images/icon-arrow-down.svg";
 </script>
 <template>
-  <img :src="heroImg" alt="image with an orange in the center" />
+  <div>
+    <h1>{{ t("hero") }}</h1>
+    <img :src="arrowDown" alt="arrow pointing down" />
+  </div>
 </template>
 
 <style lang="scss" scoped>
-img {
-  width: 100%;
+@import "@/assets/scss/variables.scss";
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  gap: 50px;
+  h1 {
+    font-size: 56px;
+    text-transform: uppercase;
+    letter-spacing: 8.75px;
+    color: $white;
+  }
 }
 </style>

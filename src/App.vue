@@ -19,5 +19,13 @@ const { t } = useI18n();
 @import "@/assets/scss/global.scss";
 @import "@/assets/scss/variables.scss";
 main {
+  .hero-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/images/desktop/image-header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 </style>
