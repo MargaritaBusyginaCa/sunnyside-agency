@@ -6,5 +6,31 @@
     "projects": "Projets",
     "change_lang": "Anglais"
   },
-  "hero": "Nous sommes des créatifs"
+  "hero": "Nous sommes des créatifs",
+  "learn_more": "apprendre encore plus",
+  "grid": {
+    "transform_title": "Transformez votre marque",
+    "transform_text": "Nous sommes une agence de création à service complet spécialisée dans l'aide aux marques pour se développer rapidement. Engagez vos clients grâce à des visuels convaincants qui font l'essentiel du marketing à votre place.",
+    "stand_out_title": "Démarquez-vous auprès du bon public",
+    "stand_out_text": "Grâce à une formule collaborative de designers, chercheurs, photographes, vidéastes et rédacteurs, nous construireons et étendrons votre marque dans les espaces numériques. ",
+    "graphic_title": "Conception graphique",
+    "graphic_text": "Un superbe design vous rend mémorable. Nous livrons des œuvres d’art qui soulignent le message de votre marque et captent l’attention des clients potentiels.",
+    "photo_title": "La photographie",
+    "photo_text": "Augmentez votre crédibilité en obtenant les photos les plus étonnantes et de haute qualité qui améliorent l'image de votre entreprise."
+  },
+  "clients": {
+    "heading": "TÉMOIGNAGES CLIENTS",
+    "emily": {
+      "job": "Directeur marketing",
+      "testimonials": "Nous avons fait confiance à Sunnyside et ils ont tenu leurs promesses, en veillant à ce que nos besoins soient satisfaits et que les délais soient toujours respectés."
+    },
+    "thomas": {
+      "job": "Président directeur général",
+      "testimonials": "L’enthousiasme de Sunnyside associé à leur vif intérêt pour le succès de notre marque en ont fait une expérience satisfaisante et agréable."
+    },
+    "jennie": {
+      "job": "Propriétaire d'entreprise",
+      "testimonials": "Résultat final incroyable ! Nos ventes ont augmenté de plus de 400 % lorsque nous avons travaillé avec Sunnyside. Hautement recommandé!"
+    }
+  }
 }

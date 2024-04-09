@@ -2,6 +2,8 @@
 import { useI18n } from "vue-i18n";
 import Navbar from "@/components/Navbar.vue";
 import Hero from "./pages/Hero.vue";
+import Grid from "./pages/Grid.vue";
+import Clients from "./pages/Clients.vue";
 const { t } = useI18n();
 </script>
 
@@ -11,7 +13,12 @@ const { t } = useI18n();
       <Navbar />
       <Hero />
     </section>
-    <p>{{ $t("greeting") }}</p>
+    <section class="grid-section">
+      <Grid />
+    </section>
+    <section class="client-testimonials">
+      <Clients />
+    </section>
   </main>
 </template>
 
@@ -26,6 +33,14 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 700px);
+  }
+  .client-testimonials {
+    padding: 160px 0;
   }
 }
 </style>
