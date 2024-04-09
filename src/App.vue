@@ -5,6 +5,7 @@ import Hero from "./pages/Hero.vue";
 import Grid from "./pages/Grid.vue";
 import Clients from "./pages/Clients.vue";
 import Gallery from "./pages/Gallery.vue";
+import Footer from "./components/Footer.vue";
 const { t } = useI18n();
 </script>
 
@@ -21,6 +22,7 @@ const { t } = useI18n();
       <Clients />
     </section>
     <Gallery />
+    <Footer />
   </main>
 </template>
 
