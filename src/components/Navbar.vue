@@ -1,17 +1,31 @@
 <script setup>
+import { ref, computed } from "vue";
 import { useI18n } from "vue-i18n";
 import logo from "/images/logo.svg";
+import hamburger from "/images/icon-hamburger.svg";
 const { t, locale } = useI18n();
 const myGitHub = "https://github.com/MargaritaBusyginaCa";
+const showMenu = ref(false);
+
 function changeLocale() {
   locale.value = locale.value === "en" ? "fr" : "en";
 }
+function toggleHamburger() {
+  showMenu.value = !showMenu.value;
+  console.log(menuDisplay.value);
+}
+const menuDisplay = computed(() => {
+  return showMenu.value ? "grid" : "none";
+});
 </script>
 
 <template>
   <nav>
     <div class="logo">
       <img :src="logo" alt="sunny side logo" />
+    </div>
+    <div class="hamburger" @click="toggleHamburger">
+      <img :src="hamburger" alt="sunny side logo" />
     </div>
     <div class="links">
       <a :href="myGitHub" target="_blank">{{ t("nav.about") }}</a>
@@ -56,10 +70,42 @@ nav {
       }
     }
   }
+  .hamburger {
+    display: none;
+  }
 }
 @media (max-width: 785px) {
   nav {
-    display: none;
+    padding: 32px 24px;
+    .hamburger {
+      display: block;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .links {
+      display: v-bind(menuDisplay);
+      position: fixed;
+      top: 100px;
+      width: 90%;
+      background-color: $white;
+      justify-items: center;
+      align-items: center;
+      padding: 50px 0;
+      a {
+        color: $very_dark_grayish;
+        text-align: center;
+        &:hover {
+          color: $red;
+        }
+      }
+      button {
+        background-color: $yellow;
+        &:hover {
+          background-color: $red;
+        }
+      }
+    }
   }
 }
 </style>

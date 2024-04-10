@@ -24,13 +24,14 @@ div {
     text-transform: uppercase;
     letter-spacing: 8.75px;
     color: $white;
+    text-align: center;
   }
 }
 @media (max-width: 785px) {
   div {
-    margin: 0;
-    h1 {
-      text-align: center;
+    margin-top: 80px;
+    img {
+      height: 170px;
     }
   }
 }
