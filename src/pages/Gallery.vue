@@ -37,4 +37,13 @@ const images = [
     width: 25%;
   }
 }
+@media (max-width: 785px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    img {
+      width: 100%;
+    }
+  }
+}
 </style>

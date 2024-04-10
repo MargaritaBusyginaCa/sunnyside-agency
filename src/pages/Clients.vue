@@ -43,6 +43,7 @@ h3 {
   font-size: 20px;
   color: $grayish_blue;
   padding-bottom: 80px;
+  letter-spacing: 5px;
 }
 .clients {
   display: flex;
@@ -62,6 +63,7 @@ h3 {
       margin: 52px 0;
       max-width: 400px;
       font-family: $font_secondary;
+      font-weight: $primary_font_weight;
       font-size: 18px;
       line-height: 32px;
       letter-spacing: -0.13px;
@@ -76,6 +78,21 @@ h3 {
       font-size: 14px;
       font-family: $font_secondary;
       color: $grayish_blue;
+    }
+  }
+}
+@media (max-width: 785px) {
+  h3 {
+    padding: 64px 0;
+    font-size: 16px;
+    letter-spacing: 4px;
+  }
+  .clients {
+    flex-direction: column;
+    padding-bottom: 80px;
+    .client .testimonial {
+      max-width: 80%;
+      margin: 32px 0;
     }
   }
 }

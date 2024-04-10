@@ -47,4 +47,18 @@ main {
     padding: 160px 0;
   }
 }
+@media (max-width: 785px) {
+  main {
+    .hero-section {
+      background-image: url("/images/mobile/image-header.jpg");
+    }
+    .grid-section {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+    .client-testimonials {
+      padding: 0;
+    }
+  }
+}
 </style>

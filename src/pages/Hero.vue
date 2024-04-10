@@ -26,4 +26,12 @@ div {
     color: $white;
   }
 }
+@media (max-width: 785px) {
+  div {
+    margin: 0;
+    h1 {
+      text-align: center;
+    }
+  }
+}
 </style>

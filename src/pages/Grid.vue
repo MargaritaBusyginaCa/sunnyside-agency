@@ -5,7 +5,7 @@ const myGitHub = "https://github.com/MargaritaBusyginaCa";
 </script>
 
 <template>
-  <div class="with-text">
+  <div class="with-text transform">
     <h2>{{ t("grid.transform_title") }}</h2>
     <p>{{ t("grid.transform_text") }}</p>
     <div class="link">
@@ -16,7 +16,7 @@ const myGitHub = "https://github.com/MargaritaBusyginaCa";
   <div class="image-background transform"></div>
 
   <div class="image-background stand-out"></div>
-  <div class="with-text">
+  <div class="with-text stand-out">
     <h2>{{ t("grid.stand_out_title") }}</h2>
     <p>{{ t("grid.stand_out_text") }}</p>
     <div class="link">
@@ -60,7 +60,7 @@ img {
     color: $dark_grey_blue;
   }
   .link {
-    position: relative;
+    //position: relative;
 
     a {
       text-transform: uppercase;
@@ -70,23 +70,23 @@ img {
       letter-spacing: 1px;
       font-weight: $primary_font_weight;
     }
-    .underline {
-      height: 10px;
-      width: 120px;
-      position: absolute;
-      bottom: -1px;
-      left: -3px;
-      z-index: -1;
-      border-radius: 10px;
-      opacity: 0.3;
+    // .underline {
+    //   height: 10px;
+    //   width: 120px;
+    //   position: absolute;
+    //   bottom: -1px;
+    //   left: -3px;
+    //   z-index: -1;
+    //   border-radius: 10px;
+    //   opacity: 0.3;
 
-      &.yellow {
-        background-color: $yellow;
-      }
-      &.coral {
-        background-color: $red;
-      }
-    }
+    //   &.yellow {
+    //     background-color: $yellow;
+    //   }
+    //   &.coral {
+    //     background-color: $red;
+    //   }
+    //}
     &:hover .underline {
       opacity: 1;
     }
@@ -129,6 +129,44 @@ img {
   .with-text {
     padding: 0 40px;
     gap: 10px;
+    h2 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+@media (max-width: 785px) {
+  .image-background {
+    height: 500px;
+
+    p {
+      width: 90%;
+      margin: 0 0 40px 0;
+    }
+  }
+  .with-text {
+    text-align: center;
+    padding: 50px;
+  }
+  .image-background.transform {
+    order: 1;
+  }
+  .with-text.transform {
+    order: 2;
+  }
+  .image-background.stand-out {
+    order: 3;
+  }
+  .with-text.stand-out {
+    order: 4;
+  }
+  .image-background.graphic-design {
+    order: 5;
+  }
+  .image-background.photography {
+    order: 6;
   }
 }
 </style>

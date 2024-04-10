@@ -57,4 +57,9 @@ nav {
     }
   }
 }
+@media (max-width: 785px) {
+  nav {
+    display: none;
+  }
+}
 </style>
