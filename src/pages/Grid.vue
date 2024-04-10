@@ -60,8 +60,8 @@ img {
     color: $dark_grey_blue;
   }
   .link {
-    //position: relative;
-
+    width: fit-content;
+    position: relative;
     a {
       text-transform: uppercase;
       text-decoration: none;
@@ -70,23 +70,23 @@ img {
       letter-spacing: 1px;
       font-weight: $primary_font_weight;
     }
-    // .underline {
-    //   height: 10px;
-    //   width: 120px;
-    //   position: absolute;
-    //   bottom: -1px;
-    //   left: -3px;
-    //   z-index: -1;
-    //   border-radius: 10px;
-    //   opacity: 0.3;
+    .underline {
+      position: absolute;
+      height: 10px;
+      width: 100%;
+      bottom: -1px;
+      left: -3px;
+      z-index: -1;
+      border-radius: 10px;
+      opacity: 0.3;
 
-    //   &.yellow {
-    //     background-color: $yellow;
-    //   }
-    //   &.coral {
-    //     background-color: $red;
-    //   }
-    //}
+      &.yellow {
+        background-color: $yellow;
+      }
+      &.coral {
+        background-color: $red;
+      }
+    }
     &:hover .underline {
       opacity: 1;
     }
@@ -140,7 +140,6 @@ img {
 @media (max-width: 785px) {
   .image-background {
     height: 500px;
-
     p {
       width: 90%;
       margin: 0 0 40px 0;
